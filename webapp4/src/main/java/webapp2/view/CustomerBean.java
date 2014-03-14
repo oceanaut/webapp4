@@ -15,6 +15,11 @@ import webapp2.domain.Customer;
 @SessionScoped
 public class CustomerBean implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	//Ddependency Injection via Spring
 	 ICustomerService customerService;
 			

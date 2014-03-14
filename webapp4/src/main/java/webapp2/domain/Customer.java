@@ -1,9 +1,24 @@
 package webapp2.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Customer {
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="CUSTOMER")
+public class Customer implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public long customerId;
+	public String name;
+	public String address;
+	public Date createdDate;
+	
 	
 	public long getCustomerId() {
 		return customerId;
@@ -29,8 +44,5 @@ public class Customer {
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
 	}
-	public long customerId;
-	public String name;
-	public String address;
-	public Date createdDate;
+	
 }

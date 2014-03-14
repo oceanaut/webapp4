@@ -10,5 +10,10 @@
 
 bonjour tout le monde!
 
+<%
+        response.sendRedirect("default.jsf");
+    %>
+
+
 </body>
 </html>
